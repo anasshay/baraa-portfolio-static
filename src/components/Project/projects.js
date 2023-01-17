@@ -11,7 +11,10 @@ export default class projects extends Component {
     return (
       <div id="projects">
         <div className="title">
-          <h1 className="main-h1">Projects<hr /></h1>
+          <h1 className="main-h1">
+            Projects
+            <hr />
+          </h1>
         </div>
         <div className="project-container">
           <div className="all">
@@ -31,7 +34,7 @@ export default class projects extends Component {
                       />
                     </div>
                     <div className="flip-card-back">
-                      <a href={link} target="_blank">
+                      <a href={link} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon
                           icon={faBars}
                           size="2x"

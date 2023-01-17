@@ -36,7 +36,11 @@ export default class Navbar extends Component {
             <FontAwesomeIcon icon={faWindowClose} size="2x" onClick={close} />
           </button>
           <div className="profile">
-            <img src={`${this.props.navData[1].image}`} alt="Profile photo" className="profile-photo" />
+            <img
+              src={`${this.props.navData[1].image}`}
+              alt="Profile photo"
+              className="profile-photo"
+            />
             <h2 id="navbar-name">{this.props.navData[1].name}</h2>
             <h4>{this.props.navData[1].description}</h4>
           </div>
@@ -50,8 +54,17 @@ export default class Navbar extends Component {
           <div className="social-media">
             {this.props.navData[2].map((item, index) => {
               return (
-                <a key={index} href={item.link} target="_blank">
-                  <img className="social-icon" src={item.imageLink} alt={item.link}/>
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="social-icon"
+                    src={item.imageLink}
+                    alt={item.link}
+                  />
                 </a>
               );
             })}
